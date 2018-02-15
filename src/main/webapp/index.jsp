@@ -15,7 +15,7 @@
 <br><textarea readonly="readonly" id="messageTextArea" rows="10" cols="50"></textarea>
 <center>
 <script type="text/javascript">
-var webSocket=new WebSocket("ws://lets-chat-lets-chat.193b.starter-ca-central-1.openshiftapps.com:8080/WebChat/serverendpointdemo");
+var webSocket=new WebSocket("ws://connectme-lets-chat.193b.starter-ca-central-1.openshiftapps.com:8080/WebChat/serverendpointdemo");
 var messagesTextArea=document.getElementById("messagesTextArea");
 webSocket.onopen=function(message){processOpen(message);};
 webSocket.onmessage=function(message){processMessage(message);};
