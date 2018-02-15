@@ -15,7 +15,7 @@
 <br><textarea readonly="readonly" id="messageTextArea" rows="10" cols="50"></textarea>
 <center>
 <script type="text/javascript">
-var wsUri = "ws://" + document.location.hostname + ":8080" + document.location.pathname + "serverendpointdemo";
+var wsUri = "ws://" + document.location.hostname + ":8080" + "/WebChat/serverendpointdemo";
 var webSocket=new WebSocket(wsUri);
 var messagesTextArea=document.getElementById("messagesTextArea");
 webSocket.onopen=function(message){processOpen(message);};
