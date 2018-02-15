@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>connectme</groupId>
+  <artifactId>WebChat</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>WebChat Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- version dependencies -->
+        <version.websocket.api>1.1</version.websocket.api>
+        <version.jboss.logging>3.1.4.GA-redhat-2</version.jboss.logging>
+
+        <!-- maven-compiler-plugin -->
+        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>1.6</maven.compiler.source>
+    </properties>
+
+  <dependencies>
+
+    <dependency>
+            <groupId>javax.websocket</groupId>
+            <artifactId>javax.websocket-api</artifactId>
+            <version>${version.websocket.api}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.logging</groupId>
+            <artifactId>jboss-logging</artifactId>
+            <version>${version.jboss.logging}</version>
+            <scope>provided</scope>
+</dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+        <!-- https://mvnrepository.com/artifact/javax.json/javax.json-api -->
+<dependency>
+    <groupId>javax.json</groupId>
+    <artifactId>javax.json-api</artifactId>
+    <version>1.0</version>
+</dependency>
+<dependency>
+  <groupId>org.glassfish</groupId>
+  <artifactId>javax.json</artifactId>
+  <version>1.0.4</version>
+</dependency>
+
+  </dependencies>
+  <build>
+    <finalName>ROOT</finalName>
+  </build>
+</project>
