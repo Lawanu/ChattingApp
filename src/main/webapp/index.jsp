@@ -2,11 +2,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Chat Testing</title>
+<title>Anonymous Chat</title>
 </head>
 <body>
 <center>
-<h2>Chat Test</h2>
+<h2>Connect Me</h2>
 <h3>First Enter your name and then start chatting.</h3>
 <form>
 <input id="textMessage" type="text" placeholder="Type here....">
